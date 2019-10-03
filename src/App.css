@@ -1,6 +1,6 @@
 #background-image{
     background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
-    height: 875px;
+    height: 1000px;
     background-size: 100%;
     background-repeat: no-repeat
 
@@ -12,7 +12,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 60px
+    padding-left: 90px;
+    padding-right: 90px
+
 
 }
 
@@ -25,8 +27,10 @@
     margin-right: 60px;
 }
 
-#dropdown{
+#dropdown-button{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: gold;
     color: white;
     font-size: 12px;
@@ -52,6 +56,65 @@
     font-family: 'Kaushan Script';
     color: gold;
 }
+
+.dropdown{
+    /* height: 0px; */
+    /* background-color: black; */
+    color:black;
+    width: 100vw;
+    overflow: hidden;
+    position: fixed;
+    top: 50px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.dropdown-buttons{
+    color: white;
+    background-color: #212629;
+    font-size: 14.4px;
+    font-family: 'montserrat';
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    padding-left: 90px;
+}
+
+
+.hide-animation{
+    animation-name: hide;
+    animation-duration: .5s;
+    animation-iteration-count: 1s;
+    animation-fill-mode: forwards;  
+  }
+  .show-animation{
+    animation-name: show;
+    animation-duration: .5s;
+    animation-iteration-count: 1s;
+    animation-fill-mode: forwards;  
+  }
+  
+  @keyframes hide{
+    0%{
+      height: 100px
+    }
+    100%{
+      height: 0px
+    } 
+  }
+  
+  @keyframes show{
+    0%{
+      height: 0px
+    }
+    100%{
+      height: 100px
+    }
+   }
 
 
 
@@ -100,16 +163,28 @@
     #header-button-container{
         display: none;
     }
-
+    #header{
+        height: 50px;
+        background-color: #212629
     
+    }
+    #header-text{
+        font-size: 20px;
+        
+    }
+
 
     
 }
 
 @media(min-width: 1000px){
-    #dropdown{
+    #dropdown-button{
         display:none
     }
+    .dropdown{
+        display: none;
+    }
+    
 }
 
 @media (max-width: 900px){
