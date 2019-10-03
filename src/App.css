@@ -1,0 +1,128 @@
+#background-image{
+    background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
+    height: 875px;
+    background-size: 100%;
+    background-repeat: no-repeat
+
+    
+}
+
+#header{
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px
+
+}
+
+#header-button-container{
+    width: 50vw;
+    right: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-right: 60px;
+}
+
+#dropdown{
+    display: flex;
+    background-color: gold;
+    color: white;
+    font-size: 12px;
+    font-family: 'montserrat';
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    
+}
+
+.header-button{
+    color: white;
+    padding: 10px 0px;
+    text-align: center;
+    font-family: 'Montserrat'
+
+}
+
+#header-text{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Kaushan Script';
+    color: gold;
+}
+
+
+
+#body{
+    height: 675px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#body-text-one{
+    font-size: 40px;
+    color: white;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 40px;
+    /* position: fixed; */
+
+}   
+
+#body-text-two{
+    font-size: 75px;
+    font-family: 'montserrat';
+    color: white;
+    font-weight: 700;
+    margin-bottom: 40px
+}   
+
+#more-button{
+    background-color: gold;
+    color: white;
+    padding: 25px;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'montserrat';
+    border-radius: 5px;
+    border: none
+}
+
+
+
+
+
+@media (max-width: 1000px){
+    
+    #header-button-container{
+        display: none;
+    }
+
+    
+
+    
+}
+
+@media(min-width: 1000px){
+    #dropdown{
+        display:none
+    }
+}
+
+@media (max-width: 900px){
+    #body-text-one{
+        font-size: 22px;
+
+    }   
+    #body-text-two{
+        font-size: 50px;
+
+    }
+    #body{
+        height: 300px
+    }
+}
+
